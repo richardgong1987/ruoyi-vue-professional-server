@@ -1,0 +1,7 @@
+version: '3'
+services:
+  ruoyi-vue-professional-server:
+    image: richardgong1987/ruoyi-vue-professional-server
+    build: .
+#    ports:
+#      - "8080:8080"

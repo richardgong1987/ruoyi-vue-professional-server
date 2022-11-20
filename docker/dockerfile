@@ -1,0 +1,8 @@
+FROM openjdk:17-jdk-slim
+COPY app.jar /app.jar
+WORKDIR /
+
+# For fixed issue: Java – NoClassDefFoundError: Could not initialize class sun.awt.X11FontManager
+RUN apt-get update; apt-get install -y fontconfig libfreetype6
+EXPOSE 8080
+ENTRYPOINT ["java","-jar","-Dspring.profiles.active=docker","-Djava.awt.headless=true","app.jar"]

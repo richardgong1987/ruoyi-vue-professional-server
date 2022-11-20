@@ -555,7 +555,7 @@ public class GenTableServiceImpl implements IGenTableService
             String path = userdir + "/ruoyi-admin/src/";
             createCodeFiles(sw, fileName, path);
         } else if (isvue) {
-            userdir = userdir.replace("/grabiphone-autograb-admin-server", "/grabiphone-autograb-admin-ui");
+            userdir = userdir.replace("/ruoyi-vue-professional-server", "/grabiphone-autograb-admin-ui");
             String path = userdir + "/src/";
             createCodeFiles(sw, fileName.replaceFirst("vue/", ""), path);
         }
