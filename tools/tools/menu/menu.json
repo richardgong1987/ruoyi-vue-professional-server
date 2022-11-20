@@ -1,0 +1,48 @@
+[
+  {
+    "name": "携帯サイト",
+    "icon": "",
+    "path": "phones",
+    "menuId": 3000,
+    "children": [
+      {
+        "name": "注文管理",
+        "icon": "",
+        "path": "orders",
+        "menuId": 3001,
+        "children": [
+          {
+            "name": "query",
+            "path": "query",
+            "menuId": 3002
+          },
+          {
+            "name": "add",
+            "path": "add",
+            "menuId": 3003
+          },
+          {
+            "name": "edit",
+            "path": "edit",
+            "menuId": 3004
+          },
+          {
+            "name": "remove",
+            "path": "remove",
+            "menuId": 3005
+          },
+          {
+            "name": "import",
+            "path": "import",
+            "menuId": 3006
+          },
+          {
+            "name": "export",
+            "path": "export",
+            "menuId": 3007
+          }
+        ]
+      }
+    ]
+  }
+]

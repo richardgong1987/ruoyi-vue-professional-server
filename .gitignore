@@ -46,3 +46,4 @@ nbdist/
 !*/build/*.html
 !*/build/*.xml
 docker/app.jar
+node_modules
