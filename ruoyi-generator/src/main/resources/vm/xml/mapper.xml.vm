@@ -76,16 +76,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         insert into ${tableName}
         <trim prefix="(" suffix=")" suffixOverrides=",">
 #foreach($column in $columns)
-#if($column.columnName != $pkColumn.columnName || !$pkColumn.increment)
             <if test="$column.javaField != null#if($column.javaType == 'String' && $column.required) and $column.javaField != ''#end">$column.columnName,</if>
-#end
 #end
          </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
 #foreach($column in $columns)
-#if($column.columnName != $pkColumn.columnName || !$pkColumn.increment)
             <if test="$column.javaField != null#if($column.javaType == 'String' && $column.required) and $column.javaField != ''#end">#{$column.javaField},</if>
-#end
 #end
          </trim>
     </insert>

@@ -123,7 +123,7 @@
 #elseif($column.list && $column.htmlType == "datetime")
       <el-table-column label="${comment}" align="center" prop="${javaField}" width="180">
         <template #default="scope">
-          <span>{{ parseTime(scope.row.${javaField}, '{y}-{m}-{d}') }}</span>
+          <span>{{ parseTime(scope.row.${javaField}, '{y}-{m}-{d} {h}:{i}:{s}') }}</span>
         </template>
       </el-table-column>
 #elseif($column.list && $column.htmlType == "imageUpload")
